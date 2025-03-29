@@ -1,6 +1,5 @@
-/* Ajout d'une police épurée (exemple : Google Fonts) */
 body {
-    font-family: 'Roboto', sans-serif;  /* Police épurée sans-serif */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #2C2C2C; /* Fond plus foncé */
@@ -17,30 +16,47 @@ body {
 /* Style du message avant que la musique ne commence */
 .message {
     font-size: 20px;
-    font-weight: bold;  /* Texte plus épais */
-    color: #fff;  /* Texte blanc pour le contraste */
+    font-weight: bold;  
+    color: #fff;  
     padding: 20px;
-    background-color: #333;  /* Fond plus foncé pour le message */
-    border-radius: 15px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
-    max-width: 400px; /* Largeur maximale de l'encadré */
+    background-color: #333;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 400px; 
     margin: 0 auto;
-    transition: opacity 0.3s ease;  /* Transition douce lors du changement de visibilité */
+    transition: opacity 0.3s ease; 
+}
+
+/* Style du lien Discord */
+.discord-link {
+    display: inline-block;  /* Affiche le lien comme un bloc en ligne */
+    font-size: 16px;  /* Taille du texte */
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #5865F2; /* Couleur Discord */
+    color: white; /* Texte blanc */
+    text-decoration: none; /* Enlève le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease;
+}
+
+.discord-link:hover {
+    background-color: #4752C4; /* Changer de couleur au survol */
 }
 
 /* Style du message affiché après avoir cliqué pour écouter */
 .music-message {
     font-size: 24px;
-    font-weight: bold;  /* Texte plus épais */
-    color: #fff;  /* Texte blanc pour le contraste */
+    font-weight: bold;
+    color: #fff;
     padding: 15px;
-    background-color: #333;  /* Fond plus foncé */
-    border-radius: 15px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    background-color: #333;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 400px;
     margin: 10px auto;
-    opacity: 0;  /* Caché par défaut */
-    transition: opacity 1s ease-in-out;  /* Transition pour l'affichage */
+    opacity: 0;  
+    transition: opacity 1s ease-in-out;
 }
 
 /* Style de la musique de fond */
