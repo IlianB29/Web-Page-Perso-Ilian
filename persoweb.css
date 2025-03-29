@@ -61,12 +61,7 @@ body {
     border: 3px solid #fff; /* Bordure blanche autour du cercle */
 }
 
-.discord-avatar {
-    width: 100%; /* Remplir tout l'espace du cercle */
-    height: 100%; /* Remplir tout l'espace du cercle */
-    object-fit: contain; /* Garder l'image dans son ratio d'origine, sans couper */
-    object-position: center; /* Centrer l'image dans le cercle */
-}
+
 /* Texte */
 .text-content {
     text-align: center;
