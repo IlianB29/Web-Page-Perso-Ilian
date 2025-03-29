@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenox</title>
-    <link rel="stylesheet" href="persoweb.css"> <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="persoweb.css">
 </head>
 <body>
     <div class="container">
         <div class="message">
             <p>ZEN</p>
-            <p>18 years old belgian UCL student and freelance web developer during free time</p>
-            <!-- Lien vers ton profil Discord -->
-            <a href="https://discord.com/users/504334591688048661" class="discord-link" target="_blank">Discord</a>
         </div>
 
-        <!-- Musique de fond -->
+        <!-- Contenu affiché après le clic -->
         <div class="audio-container" id="audio-container" style="display: none;">
             <audio id="background-music" loop>
                 <source src="kyra_act_slowed.mp3" type="audio/mp3">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
-            <h1 class="music-message" style="display: none;">Yo</h1>
-            <p class="music-message" style="display: none;">18 years old belgian UCL student and freelance web developer during free time</p>
+
+            <div class="profile-container">
+                <!-- Avatar Discord en GIF -->
+                <img src="URL_DE_TON_AVATAR.gif" alt="Avatar Discord" class="discord-avatar">
+
+                <!-- Texte après le clic -->
+                <div class="text-content">
+                    <h1 class="music-message">Yo</h1>
+                    <p class="music-message">18 years old Belgian UCL student and freelance web developer during free time</p>
+                </div>
+
+                <!-- Widget Discord -->
+                <div class="discord-widget">
+                    <iframe src="https://discord.com/widget?id=TON_SERVER_ID&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
+        // Lorsque l'utilisateur clique n'importe où sur la page
         document.body.addEventListener('click', function() {
             // Cacher le message initial
             document.querySelector('.message').style.display = 'none';
 
-            // Afficher la musique et les messages
-            document.getElementById('audio-container').style.display = 'block';
+            // Afficher la musique et le contenu après le clic
+            document.getElementById('audio-container').style.display = 'flex';
 
-            // Afficher tous les éléments avec la classe 'music-message'
+            // Afficher les messages progressivement
             let musicMessages = document.querySelectorAll('.music-message');
             musicMessages.forEach(function(message) {
-                message.style.display = 'block'; // Rendre les messages visibles
+                message.style.opacity = '1';
             });
 
             // Lancer la musique de fond
             var music = document.getElementById('background-music');
             music.play();
-
-            // Définir le volume de la musique (par exemple, 50% du volume maximum)
-            music.volume = 0.1; // Valeur entre 0 et 1 (0 = silence, 1 = volume maximal)
+            music.volume = 0.1; // Volume réduit à 50%
         });
     </script>
 </body>
