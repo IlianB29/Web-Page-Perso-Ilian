@@ -64,7 +64,8 @@ body {
 .discord-avatar {
     width: 100%; /* Remplir tout l'espace du cercle */
     height: 100%; /* Remplir tout l'espace du cercle */
-    object-fit: cover; /* Garder l'image bien centrée et l'adapter pour couvrir l'espace */
+    object-fit: contain; /* Garder l'image dans son ratio d'origine, sans couper */
+    object-position: center; /* Centrer l'image dans le cercle */
 }
 /* Texte */
 .text-content {
