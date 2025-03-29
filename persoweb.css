@@ -36,7 +36,7 @@ body {
     align-items: center;
 }
 
-/* Conteneur pour aligner avatar, texte et widget */
+/* Conteneur pour aligner avatar et texte */
 .profile-container {
     display: flex;
     align-items: center;
@@ -49,10 +49,21 @@ body {
     margin-top: 20px;
 }
 
-/* Avatar Discord */
-.discord-avatar {
+/* Wrapper pour zoomer l'avatar sans bande noire */
+.avatar-wrapper {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Avatar Discord */
+.discord-avatar {
+    width: 120px; /* Zoom léger */
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fff;
