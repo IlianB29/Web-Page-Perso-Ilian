@@ -51,21 +51,21 @@ body {
 
 /* Wrapper pour zoomer l'avatar sans bande noire */
 .avatar-wrapper {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
+    width: 100px; /* Largeur fixée pour le cercle */
+    height: 100px; /* Hauteur fixée pour le cercle */
+    border-radius: 50%; /* Cacher les coins pour former un cercle */
+    overflow: hidden; /* Ne pas laisser déborder l'image */
+    display: flex; /* Utiliser flexbox pour centrer le contenu */
     justify-content: center;
     align-items: center;
-    border: 3px solid #fff;
+    border: 3px solid #fff; /* Bordure blanche autour du cercle */
 }
 
 /* Avatar Discord */
 .discord-avatar {
-    width: 120%;
-    height: 120%;
-    object-fit: cover;
+    width: 100%; /* Augmenter légèrement la taille pour remplir le cercle */
+    height: 100%; /* Augmenter légèrement la hauteur aussi */
+    object-fit: cover; /* Garder l'image bien centrée sans déformation */
 }
 /* Texte */
 .text-content {
