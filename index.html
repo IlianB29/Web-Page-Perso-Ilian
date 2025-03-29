@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="an">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Personnelle</title>
+    <title>Zenox</title>
     <link rel="stylesheet" href="persoweb.css"> <!-- Lien vers ton fichier CSS -->
 </head>
 <body>
     <div class="container">
-        <!-- Message Personnel -->
         <div class="message">
-            <h1>Bienvenue sur ma page !</h1>
-            <p>Je suis [Ton Nom], développeur web passionné. Connecte-toi avec moi !</p>
+            <h1>Yo</h1>
+            <p>18 years old belgian UCL student and freelance web developer during free time</p>
+            <button id="start-button">ZEN</button>
         </div>
 
         <!-- Musique de fond -->
-        <audio controls autoplay loop>
-            <source src="kyra_act_slowed.mp3" type="audio/mp3">
-            Votre navigateur ne supporte pas l'élément audio.
-        </audio>
+        <div class="audio-container" id="audio-container">
+            <audio id="background-music" loop>
+                <source src="kyra_act_slowed.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
     </div>
+
+    <script>
+        // Lorsque l'utilisateur clique sur le bouton
+        document.getElementById('start-button').addEventListener('click', function() {
+            // Cacher le message initial
+            document.querySelector('.message').style.display = 'none';
+
+            // Afficher la musique
+            document.getElementById('audio-container').style.display = 'block';
+
+            // Lancer la musique de fond
+            var music = document.getElementById('background-music');
+            music.play();
+        });
+    </script>
 </body>
 </html>
