@@ -60,15 +60,6 @@ body {
     align-items: center;
 }
 
-/* Avatar Discord */
-.discord-avatar {
-    width: 120px; /* Zoom léger */
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-}
-
 /* Texte */
 .text-content {
     text-align: center;
