@@ -19,9 +19,9 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     background-color: #333;
-    border-radius: 15px;
+    border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     margin: 0 auto;
@@ -51,8 +51,8 @@ body {
 
 /* Wrapper pour zoomer l'avatar sans bande noire */
 .avatar-wrapper {
-    width: 100px; /* Largeur fixée pour le cercle */
-    height: 100px; /* Hauteur fixée pour le cercle */
+    width: 350px; /* Largeur fixée pour le cercle */
+    height: 225px; /* Hauteur fixée pour le cercle */
     border-radius: 50%; /* Cacher les coins pour former un cercle */
     overflow: hidden; /* Ne pas laisser déborder l'image */
     display: flex; /* Utiliser flexbox pour centrer le contenu */
@@ -60,12 +60,6 @@ body {
     align-items: center;
     border: 3px solid #fff; /* Bordure blanche autour du cercle */
 }
-
-.discord-avatar {
-    height: 100%; /* Remplir tout l'espace du cercle */
-    object-position: center; /* Centrer l'image dans le cercle */
-}
-
 
 /* Texte */
 .text-content {
