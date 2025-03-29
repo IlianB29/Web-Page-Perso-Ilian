@@ -58,17 +58,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #fff;
 }
 
 /* Avatar Discord */
 .discord-avatar {
-    width: 120px; /* Zoom léger */
-    height: auto;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 3px solid #fff;
+    transform: scale(1.2); /* Zoom sans déformer */
 }
-
 /* Texte */
 .text-content {
     text-align: center;
