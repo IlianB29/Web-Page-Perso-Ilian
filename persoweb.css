@@ -52,7 +52,7 @@ body {
 /* Wrapper pour zoomer l'avatar sans bande noire */
 .avatar-wrapper {
     width: 100px; /* Largeur fixée pour le cercle */
-    height: 30px; /* Hauteur fixée pour le cercle */
+    height: 75px; /* Hauteur fixée pour le cercle */
     border-radius: 50%; /* Cacher les coins pour former un cercle */
     overflow: hidden; /* Ne pas laisser déborder l'image */
     display: flex; /* Utiliser flexbox pour centrer le contenu */
