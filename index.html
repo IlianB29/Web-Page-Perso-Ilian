@@ -10,6 +10,9 @@
     <div class="container">
         <div class="message">
             <p>ZEN</p>
+            <p>18 years old belgian UCL student and freelance web developer during free time</p>
+            <!-- Lien vers ton profil Discord -->
+            <a href="https://discord.com/users/504334591688048661" class="discord-link" target="_blank">Discord</a>
         </div>
 
         <!-- Musique de fond -->
@@ -24,7 +27,6 @@
     </div>
 
     <script>
-        // Lorsque l'utilisateur clique n'importe où sur la page
         document.body.addEventListener('click', function() {
             // Cacher le message initial
             document.querySelector('.message').style.display = 'none';
@@ -35,9 +37,7 @@
             // Afficher tous les éléments avec la classe 'music-message'
             let musicMessages = document.querySelectorAll('.music-message');
             musicMessages.forEach(function(message) {
-                // Utiliser 'block' pour les rendre visibles
-                message.style.display = 'block';
-                message.style.opacity = '1';  // Rendre le message visible
+                message.style.display = 'block'; // Rendre les messages visibles
             });
 
             // Lancer la musique de fond
