@@ -9,9 +9,7 @@
 <body>
     <div class="container">
         <div class="message">
-            <h1>Yo</h1>
-            <p>18 years old belgian UCL student and freelance web developer during free time</p>
-            <button id="start-button">ZEN</button>
+            <button id="start-button">Cliquez pour écouter la musique</button>
         </div>
 
         <!-- Musique de fond -->
@@ -20,6 +18,8 @@
                 <source src="kyra_act_slowed.mp3" type="audio/mp3">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
+            <h1 class="music-message" style="display: none;">Yo</h1>
+            <p class="music-message" style="display: none;">18 years old belgian UCL student and freelance web developer during free time</p>
         </div>
     </div>
 
@@ -29,8 +29,14 @@
             // Cacher le message initial
             document.querySelector('.message').style.display = 'none';
 
-            // Afficher la musique
+            // Afficher la musique et les messages
             document.getElementById('audio-container').style.display = 'block';
+
+            // Afficher tous les éléments avec la classe 'music-message'
+            let musicMessages = document.querySelectorAll('.music-message');
+            musicMessages.forEach(function(message) {
+                message.style.display = 'block'; // Rendre les messages visibles
+            });
 
             // Lancer la musique de fond
             var music = document.getElementById('background-music');
