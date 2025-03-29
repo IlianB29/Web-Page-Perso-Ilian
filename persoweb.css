@@ -64,12 +64,6 @@ body {
     color: #fff;
 }
 
-/* Widget Discord */
-.discord-widget iframe {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Texte après le clic */
 .music-message {
     font-size: 24px;
