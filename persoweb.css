@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;  /* Police épurée sans-serif */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Couleur de fond claire */
+    background-color: #2C2C2C; /* Fond plus foncé */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,12 @@ body {
 /* Style du message avant que la musique ne commence */
 .message {
     font-size: 20px;
-    color: #333;
+    font-weight: bold;  /* Texte plus épais */
+    color: #fff;  /* Texte blanc pour le contraste */
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;  /* Fond plus foncé pour le message */
     border-radius: 15px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'encadré */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
     max-width: 400px; /* Largeur maximale de l'encadré */
     margin: 0 auto;
     transition: opacity 0.3s ease;  /* Transition douce lors du changement de visibilité */
@@ -30,11 +31,12 @@ body {
 /* Style du message affiché après avoir cliqué pour écouter */
 .music-message {
     font-size: 24px;
-    color: #333;
+    font-weight: bold;  /* Texte plus épais */
+    color: #fff;  /* Texte blanc pour le contraste */
     padding: 15px;
-    background-color: #fff;
+    background-color: #333;  /* Fond plus foncé */
     border-radius: 15px;  /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
     max-width: 400px;
     margin: 10px auto;
     opacity: 0;  /* Caché par défaut */
