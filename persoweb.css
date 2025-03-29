@@ -1,8 +1,9 @@
+/* Ajout d'une police épurée */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2C2C2C; /* Fond plus foncé */
+    background-color: #1E1E1E; /* Fond encore plus foncé */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,59 +14,72 @@ body {
     text-align: center;
 }
 
-/* Style du message avant que la musique ne commence */
+/* Message initial */
 .message {
-    font-size: 20px;
-    font-weight: bold;  
-    color: #fff;  
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
     padding: 20px;
-    background-color: #333;  
-    border-radius: 15px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    max-width: 400px; 
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
     margin: 0 auto;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
 
-/* Style du lien Discord */
-.discord-link {
-    display: inline-block;  /* Affiche le lien comme un bloc en ligne */
-    font-size: 16px;  /* Taille du texte */
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #5865F2; /* Couleur Discord */
-    color: white; /* Texte blanc */
-    text-decoration: none; /* Enlève le soulignement */
-    border-radius: 5px; /* Coins arrondis */
-    transition: background-color 0.3s ease;
+/* Conteneur principal après le clic */
+.audio-container {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.discord-link:hover {
-    background-color: #4752C4; /* Changer de couleur au survol */
+/* Conteneur pour aligner avatar, texte et widget */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les éléments */
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin-top: 20px;
 }
 
-/* Style du message affiché après avoir cliqué pour écouter */
+/* Avatar Discord */
+.discord-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+/* Texte */
+.text-content {
+    text-align: center;
+    color: #fff;
+}
+
+/* Widget Discord */
+.discord-widget iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte après le clic */
 .music-message {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    padding: 15px;
-    background-color: #333;  
-    border-radius: 15px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    max-width: 400px;
-    margin: 10px auto;
-    opacity: 0;  
+    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-/* Style de la musique de fond */
-.audio-container {
-    display: none;
-    text-align: center;
-}
-
-/* Style pour l'audio */
+/* Musique */
 audio {
     margin-top: 20px;
 }
