@@ -9,11 +9,13 @@
 <body>
     <div class="container">
         <div class="message">
-            <button id="start-button">ZEN</button>
+            <!-- On supprime le bouton, l'utilisateur peut cliquer n'importe où -->
+            <h1>Bienvenue sur mon site</h1>
+            <p>Cliquez n'importe où pour commencer la musique</p>
         </div>
 
         <!-- Musique de fond -->
-        <div class="audio-container" id="audio-container">
+        <div class="audio-container" id="audio-container" style="display: none;">
             <audio id="background-music" loop>
                 <source src="kyra_act_slowed.mp3" type="audio/mp3">
                 Votre navigateur ne supporte pas l'élément audio.
@@ -24,8 +26,8 @@
     </div>
 
     <script>
-        // Lorsque l'utilisateur clique sur le bouton
-        document.getElementById('start-button').addEventListener('click', function() {
+        // Lorsque l'utilisateur clique n'importe où sur la page
+        document.body.addEventListener('click', function() {
             // Cacher le message initial
             document.querySelector('.message').style.display = 'none';
 
@@ -41,7 +43,9 @@
             // Lancer la musique de fond
             var music = document.getElementById('background-music');
             music.play();
-            music.volume = 0.1;
+
+            // Définir le volume de la musique (par exemple, 50% du volume maximum)
+            music.volume = 0.5; // Valeur entre 0 et 1 (0 = silence, 1 = volume maximal)
         });
     </script>
 </body>
